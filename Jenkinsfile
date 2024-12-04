@@ -43,7 +43,7 @@ pipeline {
             steps {
                 // Run Docker Compose to build and start containers
                 script {
-                    bat 'docker compose up -d'
+                   // bat 'docker compose up -d'
                 }
 
 
