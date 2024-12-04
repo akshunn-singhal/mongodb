@@ -20,6 +20,16 @@ pipeline {
 			}
 		}
 
+		 stage('Show docker container') {
+        			steps {
+        			  echo "show docker"
+        			  script
+        			  {
+        			      bat 'docker ps'
+        			  }
+        			}
+        		}
+
 	    stage('Build docker image') {
 			steps {
 			  echo "Build image"
