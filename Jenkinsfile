@@ -39,16 +39,16 @@ pipeline {
 			  }
 			}
 		}
-		stage('Run docker containers') {
-            steps {
-                // Run Docker Compose to build and start containers
-                script {
-                   // bat 'docker compose up -d'
-                }
-
-
-            }
-        }
+// 		stage('Run docker containers') {
+//             steps {
+//                 // Run Docker Compose to build and start containers
+//                 script {
+//                     bat 'docker compose up -d'
+//                 }
+//
+//
+//             }
+//         }
         stage('Push image to Hub'){
             steps{
 
