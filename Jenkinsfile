@@ -25,7 +25,7 @@ pipeline {
 			  echo "Build image"
 			  script
 			  {
-			      bat 'docker build -t akshunn/mongodb .'
+			      bat 'docker -v $(which docker):/usr/bin/docker build -t akshunn/mongodb .'
 			  }
 			}
 		}
